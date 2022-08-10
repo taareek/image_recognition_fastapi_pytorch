@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test purpose</title>
+</head>
+<body>
+    <h1>Sample form data</h1>
+    <form action="/tarek", method="post">
+        <input type="text" name="top_left_lang">
+        <br>
+        <input type="text" name="top_left_long">
+        <br>
+        <input type="submit">
+    </form>
+    <br>
+    <br>
+    <h3>Data from the form</h3>
+     <!-- Display output data -->
+     {% if data %}
+     <div>
+         <p>Top Left Langitude: {{data.t_left_lang}}</p>
+         <p>Top Left Longitude: {{data.t_left_long}}</p>
+         
+     </div>
+     {% endif %}
+</body>
+</html>
